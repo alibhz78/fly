@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base{
+    @font-face {
+        font-family: 'Vazir';
+        src: url("../font/Vazir.ttf");
+      }
+  
+}
+@layer utilities{
+    .main-container{
+        @apply bg-white w-full h-screen font-['Vazir'] 		
+
+    }
+    .header{
+        @apply w-full 
+    }
+    .navbar{
+        @apply flex w-full justify-between p-10 
+    }
+    .li-navbar{
+        @apply mr-8 text-[15px] font-normal	 text-[#515D6B]	hover:text-[#A145FF] hover:font-semibold	
+    }
+    .atflylady{
+        @apply text-center text-[#7D8590]
+    }
+    .li-input{
+        @apply relative flex justify-around items-center 	 
+    }
+    .li-input::before{
+        color:#515D6B;
+        position: absolute;
+        top: -2.5rem;
+        left: 0px;
+        content: 'origin';
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .input-li{
+        @apply w-full h-[24px]  text-[15px] font-normal w-3/5	
+    }
+}
