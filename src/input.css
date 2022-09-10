@@ -13,6 +13,7 @@
   }
 
   .navbar {
+    background: linear-gradient(180deg, #E7D0FF -20.81%, rgba(231, 208, 255, 0) 79.23%);
     @apply flex w-full justify-between p-10;
   }
   .li-navbar {
