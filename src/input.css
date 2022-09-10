@@ -1,43 +1,59 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@layer base{
-    @font-face {
-        font-family: 'Vazir';
-        src: url("../font/Vazir.ttf");
-      }
-  
+@layer base {
+  @font-face {
+    font-family: 'Vazir';
+    src: url('../font/Vazir.ttf');
+  }
 }
-@layer utilities{
-    .main-container{
-        @apply bg-white w-full h-screen font-['Vazir'] 		
+@layer utilities {
+  .main-container {
+    @apply bg-white w-full h-screen font-['Vazir'];
+  }
 
-    }
-    .header{
-        @apply w-full 
-    }
-    .navbar{
-        @apply flex w-full justify-between p-10 
-    }
-    .li-navbar{
-        @apply mr-8 text-[15px] font-normal	 text-[#515D6B]	hover:text-[#A145FF] hover:font-semibold	
-    }
-    .atflylady{
-        @apply text-center text-[#7D8590]
-    }
-    .li-input{
-        @apply relative flex justify-around items-center 	 
-    }
-    .li-input::before{
-        color:#515D6B;
-        position: absolute;
-        top: -2.5rem;
-        left: 0px;
-        content: 'origin';
-        font-weight: 400;
-        font-size: 14px;
-    }
-    .input-li{
-        @apply w-full h-[24px]  text-[15px] font-normal w-3/5	
-    }
+  .navbar {
+    @apply flex w-full justify-between p-10;
+  }
+  .li-navbar {
+    @apply mr-8 text-[15px] font-normal	 text-[#515D6B]	hover:text-[#A145FF] hover:font-semibold;
+  }
+  .atflylady {
+    @apply text-center text-[#7D8590];
+  }
+  .li-input {
+    @apply relative flex justify-around items-center;
+  }
+  .li-input::before {
+    color: #515d6b;
+    position: absolute;
+    top: -2.5rem;
+    left: 0px;
+    content: 'origin';
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .input-li {
+    @apply w-full h-[24px]  text-[15px] font-normal w-3/5;
+  }
+  .li-price {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(70px);
+    @apply w-72	h-auto  m-3 rounded-[20px] p-2;
+  }
+  .div-shomre {
+    background: linear-gradient(
+      92.26deg,
+      rgba(255, 255, 255, 0.72) 5.34%,
+      rgba(255, 255, 255, 0.8) 99.22%
+    );
+    backdrop-filter: blur(80px);
+  }
+  .div-whatmake {
+    background: linear-gradient(114.53deg, #a145ff 10.24%, #da45ff 126.02%);
+  }
+  .div-username {
+    background: #ffffff;
+    backdrop-filter: blur(70px);
+  }
 }
