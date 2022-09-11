@@ -11,19 +11,53 @@
   .main-container {
     @apply bg-white w-full h-screen font-['Vazir'];
   }
+  .heder {
+    background: linear-gradient(
+      180deg,
+      #e7d0ff -20.81%,
+      rgba(231, 208, 255, 0) 79.23%
+    );
+  }
 
   .navbar {
-    background: linear-gradient(180deg, #E7D0FF -20.81%, rgba(231, 208, 255, 0) 79.23%);
     @apply flex w-full justify-between p-10;
   }
   .li-navbar {
-    @apply mr-8 text-[15px] font-normal	 text-[#515D6B]	hover:text-[#A145FF] hover:font-semibold;
+    @apply mr-8 text-sm	 font-normal	 text-[#515D6B]	hover:text-[#A145FF] hover:font-semibold;
   }
   .atflylady {
     @apply text-center text-[#7D8590];
   }
   .li-input {
-    @apply relative flex justify-around items-center;
+    @apply flex justify-around items-center relative;
+  }
+  .signup {
+    width: 126px;
+    height: 56px;
+    border: 2px solid #a145ff;
+    border-radius: 28px;
+    padding: 16px, 32px, 16px, 32px;
+    color:#A145FF;
+  }
+  .searchfly::after {
+    position: absolute;
+    bottom: -10px;
+    right: 0px;
+    left: 0px;
+    content: '';
+    width: 131px;
+    height: 47px;
+    background: #a145ff;
+    opacity: 0.7;
+    filter: blur(32px);
+    border-radius: 23.5px;
+  }
+  .searchfly {
+    position: relative;
+    padding: 16px, 32px, 16px, 32px;
+    background: #a145ff;
+    border-radius: 45px;
+    @apply w-36	h-16 text-white;
   }
   .li-input::before {
     color: #515d6b;
@@ -33,6 +67,18 @@
     content: 'origin';
     font-weight: 400;
     font-size: 14px;
+  }
+  .li-input2::before{
+    content: 'Destination';
+  }
+  .li-input3::before{
+    content: 'Departure';
+  }
+  .li-input4::before{
+    content: 'Return';
+  }
+  .li-input5::before{
+    content: 'Passengers';
   }
   .input-li {
     @apply w-full h-[24px]  text-[15px] font-normal w-3/5;
