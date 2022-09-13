@@ -23,7 +23,7 @@
     @apply flex w-full justify-between p-10;
   }
   .li-navbar {
-    @apply mr-8 text-sm	 font-normal	 text-[#515D6B]	hover:text-[#A145FF] hover:font-semibold;
+    @apply mr-8 text-sm	 font-normal	 text-[#515D6B]	hover:text-[#A145FF] hover:font-semibold relative 	;
   }
   .atflylady {
     @apply text-center text-[#7D8590];
@@ -32,12 +32,7 @@
     @apply flex justify-around items-center relative;
   }
   .signup {
-    width: 126px;
-    height: 56px;
-    border: 2px solid #a145ff;
-    border-radius: 28px;
-    padding: 16px, 32px, 16px, 32px;
-    color:#A145FF;
+    @apply w-32	h-14 border-2	border-2	border-[#a145ff] rounded-[2rem] px-8 py-4 text-[#A145FF] hover:bg-[#A145FF] hover:text-white;		
   }
   .searchfly::after {
     position: absolute;
@@ -51,6 +46,12 @@
     opacity: 0.7;
     filter: blur(32px);
     border-radius: 23.5px;
+  }
+  .btn-pearsion{
+    padding: 16px, 32px, 16px, 32px;
+    background: #a145ff;
+    border-radius: 45px;
+    @apply w-36	h-16 text-white;
   }
   .searchfly {
     position: relative;
